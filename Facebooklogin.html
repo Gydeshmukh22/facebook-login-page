@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook login page</title>
+    <style>
+        #{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(237, 234, 239);
+        }
+        .container{
+            margin: 10px 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .leftpart{
+            width: 40%;
+        }
+        h1{
+            color: #1877f2;
+            font-size: 80px;
+        }
+        h3{
+            color: black;
+            font-size: 30px;
+        }
+        .rightpart{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .loginpage{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            width: 450px;
+            height: 390px;
+            box-shadow: -10px -10px 15px rgba(0, 0, 0, 0, 1),
+            10px 10px 15px rgba(0, 0, 0, 0, 1);
+            border-radius: 10px;
+          }
+          form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 0px;
+          }
+          input{
+            width: 380px;
+            height: 50px;
+            margin: 10px 0px;
+            padding: 0px 10px;
+            outline: none;
+            border: 1px solid #cdcacaf8;
+            font-size: 18px;
+            border-radius: 10px;
+          }
+          input[type="submit"]{
+            background-color:  #1877f2;
+            color: white;
+          }
+          input:hover{
+            border: 1px solid #1366d1;
+          }
+          input[type="submit"]:hover{
+             background-color: #1366d1;
+          }
+          p{
+            color:   #1366d1;
+          }
+          p:hover{
+          text-decoration: underline;
+          }
+          hr{
+            border: 1px solid #d2d0d0;
+            width: 300px;
+            margin: 20px 0px;
+          }
+          .createaccount{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #42b72a;
+            width: 250px;
+            height: 30px;
+            font-size: 18px;
+            font-weight: 30px;
+            color: white;
+            border-radius: 10px;
+          }
+          .createaccount:hover{
+             background-color: #3ba327;
+          }
+         span{
+            margin: 20px 0px;
+            font-size: 18px;
+            font-weight: 20px;
+         }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="leftpart">
+        <h1>Facebook</h1>
+        <h3>facebook helps you to connect and share with the people in your life</h3>
+       </div>
+      <div class="rightpart">
+        <div class="loginpage">
+            <form >
+                <input type="text" placeholder="Email or phone number ">
+                <input type="password" name="pass" id="pass" placeholder="password">
+                <input type="submit">
+            </form>
+            <p>Forgot password ? </p>
+            <hr>
+            <div class="createaccount">
+                Create a new account
+            </div>
+        </div>
+        <span>Create a page for a well known person, orchestra or business</span>
+        </div>
+      </div>
+</body>
+</html>
